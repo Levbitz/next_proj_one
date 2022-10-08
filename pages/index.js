@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
+import ContactForm from "../componets/ContactForm/ContactForm";
 import Footer from "../componets/Footer/Footer";
 
 import Grides from "../componets/HomeComponents/Grids/Grides";
@@ -36,6 +37,8 @@ export default function Home() {
       </div>
 
       <Grides />
+
+      <ContactForm />
       <Footer />
     </div>
   );

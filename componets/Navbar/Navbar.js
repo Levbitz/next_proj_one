@@ -1,6 +1,7 @@
 import React from "react";
 import Head from "next/head";
 import Link from "next/link";
+import Script from "next/script";
 
 function Navbar() {
   return (
@@ -9,6 +10,10 @@ function Navbar() {
         <link
           rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+        />
+        <link
+          href="https://fonts.googleapis.com/icon?family=Material+Icons"
+          rel="stylesheet"
         />
       </Head>
 
@@ -23,7 +28,7 @@ function Navbar() {
                 <a href="sass.html">Sass</a>
               </li>
               <li>
-                <a href="badges.html">Components</a>
+                <Link href="/contact">Contact Us</Link>
               </li>
               <li>
                 <a href="collapsible.html">JavaScript</a>
@@ -32,6 +37,8 @@ function Navbar() {
           </div>
         </nav>
       </div>
+
+      <Script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js" />
     </div>
   );
 }
